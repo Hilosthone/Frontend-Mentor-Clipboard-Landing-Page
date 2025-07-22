@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+}
+
+header,
+section,
+footer {
+  padding: 4rem 2rem;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.ios {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.btn.mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.features img {
+  max-width: 100%;
+}
+
+.feature-texts {
+  max-width: 600px;
+  text-align: left;
+}
+
+.access img {
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.workflow-items {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.workflow-items div {
+  padding: 1rem;
+}
+
+.workflow-items img {
+  margin-bottom: 1rem;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.brands img {
+  height: 40px;
+  object-fit: contain;
+}
+
+footer {
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.footer-logo {
+  width: 40px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+  font-weight: 500;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socials img {
+  width: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .feature-texts {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .workflow-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, auto);
+  }
+}
